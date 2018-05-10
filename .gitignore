@@ -1,3 +1,3 @@
 *.[oa]
 *.pyc
-
+*.ipynb_checkpoints/*
