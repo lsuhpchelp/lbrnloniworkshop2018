@@ -1,4 +1,7 @@
 *.[oa]
 *.pyc
+cifar-10-batches-py
+.ipynb_checkpoints
 */.ipynb_checkpoints/*
 *.ipynb_checkpoints/*
+day2_python/project/.ipynb_checkpoints/*
