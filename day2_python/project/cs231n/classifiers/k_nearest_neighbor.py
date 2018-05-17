@@ -146,8 +146,9 @@ class KNearestNeighbor(object):
       gives the distance betwen the ith test point and the jth training point.
 
     Returns:
-    - y: A numpy array of shape (num_test,) containing predicted labels for the
+    - y_pred: A numpy array of shape (num_test,) containing predicted labels for the
       test data, where y[i] is the predicted label for the test point X[i].  
+    - close_k: A list of numpy array containing the k nearest neighbor of the test data
     """
     num_test = dists.shape[0]
     y_pred = np.zeros(num_test)
@@ -156,24 +157,8 @@ class KNearestNeighbor(object):
       # A list of length k storing the labels of the k nearest neighbors to
       # the ith test point.
       closest_y = []
-      #########################################################################
-      # TODO:                                                                 #
-      # Use the distance matrix to find the k nearest neighbors of the ith    #
-      # testing point, and use self.y_train to find the labels of these       #
-      # neighbors. Store these labels in closest_y.                           #
-      # Hint: Look up the function numpy.argsort.                             #
-      #########################################################################
       closest_y = np.argsort(dists[i,:])[:k]
       close_k[i] = closest_y
-      #print(closest_y)
-      #pass
-      #########################################################################
-      # TODO:                                                                 #
-      # Now that you have found the labels of the k nearest neighbors, you    #
-      # need to find the most common label in the list closest_y of labels.   #
-      # Store this label in y_pred[i]. Break ties by choosing the smaller     #
-      # label.                                                                #
-      #########################################################################
       y_pred[i] = np.bincount(self.y_train[closest_y]).argmax()
       #pass
       #########################################################################
