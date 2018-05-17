@@ -21,6 +21,7 @@ class KNearestNeighbor(object):
     """
     self.X_train = X
     self.y_train = y
+    self.close_k = np.empty
     
   def predict(self, X, k=1, num_loops=0):
     """
@@ -150,6 +151,7 @@ class KNearestNeighbor(object):
     """
     num_test = dists.shape[0]
     y_pred = np.zeros(num_test)
+    close_k = np.zeros((num_test,k),dtype=int)
     for i in xrange(num_test):
       # A list of length k storing the labels of the k nearest neighbors to
       # the ith test point.
@@ -162,6 +164,8 @@ class KNearestNeighbor(object):
       # Hint: Look up the function numpy.argsort.                             #
       #########################################################################
       closest_y = np.argsort(dists[i,:])[:k]
+      close_k[i] = closest_y
+      #print(closest_y)
       #pass
       #########################################################################
       # TODO:                                                                 #
@@ -176,5 +180,5 @@ class KNearestNeighbor(object):
       #                           END OF YOUR CODE                            # 
       #########################################################################
 
-    return y_pred
+    return y_pred, close_k
 
