@@ -6,7 +6,7 @@ TODO:
 
 - First time set up to configure your identity. Look at the slide "First time Git setup".
 - Define a git command alias </br>
-`git config --global alias.graph 'log --all --oneline --decorate --graph'`. Look at the slide "Add a useful command before Travel"
+`git config --global alias.graph 'log --all --oneline --decorate --graph'`</br> Look at the slide "Add a useful command before Travel"
 
 ## Build a local repository from scratch
 
@@ -19,7 +19,7 @@ TODO:
 `Git is flexible.`</br>
 `Git is easy to use.`</br>
 - If you are new to using text editors on Linux you probably want to use nano instead of vi/emacs as your default text editor.
-- Use the git command `git log` or the command alias we defined earlier to see the 3 commits.
+- Use the git command `git log` or the command alias `git graph` we defined earlier to see the 3 commits.
 - Try to travel through different version history using `git reset --hard commit-hash` and `git reflog`
 
 ## Create a branch, make changes, merge, logs
