@@ -37,6 +37,9 @@ TODO:
 - Use the command alias `git graph` to visualize the commit and branch history.
 
 ## Push your repository to GitHub
+
+TODO: 
+
 - If you do not have a GitHub account, register one at https://github.com/
-- Create a new repository using the new GitHub account and then push your local repository to the remote repository.
+- Create a new remote repository using your GitHub account and then push your local repository to the remote repository.
 
