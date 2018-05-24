@@ -20,7 +20,7 @@ TODO:
 `Git is easy to use.`</br>
 - If you are new to using text editors on Linux you probably want to use nano instead of vi/emacs as your default text editor.
 - Use the git command `git log` or the command alias `git graph` we defined earlier to see the 3 commits.
-- Try to travel through different version history using `git reset --hard commit-hash` and `git reflog`
+- Try to travel through different version history using `git reset --hard <commit-hash>` and `git reflog`
 
 ## Create a branch, make changes, merge, logs
 
