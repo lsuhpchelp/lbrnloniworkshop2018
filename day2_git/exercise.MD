@@ -1,36 +1,42 @@
 # Version Control using Git Exercise
 
-First time set up to configure your identity. Look at the slide "First time Git setup".
+## Setup your git environment
 
+TODO:
+
+- First time set up to configure your identity. Look at the slide "First time Git setup".
+- Define a git command alias 
+`git config --global alias.graph 'log --all --oneline --decorate --graph'`. Look at the slide "Add a useful command before Travel"
 
 ## Build a local repository from scratch
 
-TODO: 
+TODO:
+ 
 - Initialize an empty git repository in your /home directory, e.g., `/home/hpctrn01/myrepo`.
 - Create a new text file named "myfirstfile.txt" in the repository
 - Add the following three lines step by step to the myfirstfile.txt, each time you add a line, use git to add your changes and commit to the repository:
-> `I learned Git Version Control today.`
-
-> `Git is flexible.`
-
-> `Git is easy to use.`
-
-- *If you are new to using text editors on Linux you probably want to use nano instead of vi/emacs as your default text editor.*
+`I learned Git Version Control today.`</br>
+`Git is flexible.`</br>
+`Git is easy to use.`</br>
+- If you are new to using text editors on Linux you probably want to use nano instead of vi/emacs as your default text editor.
+- Use the git command `git log` or the command alias we defined earlier to see the 3 commits.
+- Try to travel through different version history using `git reset --hard commit-hash` and `git reflog`
 
 ## Create a branch, make changes, merge, logs
-TODO: Write usage instructions
+
+TODO: 
+
+- Create a dev branch, add the following line to "myfirstfile.txt" and commit your changes to the dev branch:
+`I now create a dev branch`</br>
+- Switch to the master branch, merge master branch with the dev branch.
+- Switch to the dev branch, add the following line to the file and commit your changes:
+`Git branch is fast AND easy.`
+- Switch to the master branch, add the following line to the file and commit your changes:
+`Git branch is fast & easy.`
+- Try to merge the master branch with the dev branch, there will be a conflict during the merge, resolve the conflict and merge the dev branch, delete the dev branch when merge is complete
+- Use the command alias `git graph` to visualize the commit and branch history.
+
 ## Push your repository to GitHub
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-## History
-TODO: Write history
-## Credits
-TODO: Write credits
-## License
-TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+- If you do not have a GitHub account, register one at https://github.com/
+- Create a new repository using the new GitHub account and then push your local repository to the remote repository.
+
