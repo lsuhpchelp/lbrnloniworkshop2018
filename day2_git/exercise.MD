@@ -4,7 +4,9 @@
 
 TODO:
 
-- First time set up to configure your identity. Look at the slide "First time Git setup".
+- First time set up to configure your identity. Look at the slide "First time Git setup".</br>
+`git config --global user.name "Your Name"`</br>
+`git config --global user.email "your@email.edu"`
 - Define a git command alias </br>
 `git config --global alias.graph 'log --all --oneline --decorate --graph'`</br> Look at the slide "Add a useful command before Travel"
 
@@ -33,7 +35,7 @@ TODO:
 `Git branch is fast AND easy.`
 - Switch to the master branch, add the following line to the file and commit your changes:</br>
 `Git branch is fast & easy.`
-- Try to merge the master branch with the dev branch, there will be a conflict during the merge, resolve the conflict and merge the dev branch, delete the dev branch when merge is complete
+- Try to merge the master branch with the dev branch, there will be a conflict during the merge, resolve the conflict and merge the dev branch, delete the dev branch when merge is complete.
 - Use the command alias `git graph` to visualize the commit and branch history.
 
 ## Push your repository to GitHub
