@@ -29,7 +29,7 @@ If your training account number is larger than 32 (`hpctrn33 ~ hpctrn60`):
 
 ## 4. Get updated Bootcamp repository:
 <pre>
-git clone https://github.com/lsuhpchelp/lbrnloniworkshop2018.git
+[hpctrn??@mike001 ~]$ git clone https://github.com/lsuhpchelp/lbrnloniworkshop2018.git
 </pre>
 
 ## 5. Start Jupyter notebook from the compute node:
