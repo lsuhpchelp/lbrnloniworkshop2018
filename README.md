@@ -2,6 +2,8 @@
 
 Repository for 1st LBRN/LONI Scientific Computing Bootcamp
 
+Survey link: https://goo.gl/forms/gVGeRUJzKUE3SAxE2
+
 # Start Jupyter Notebook on SuperMike2
 
 ## 1. From your *local* terminal:
