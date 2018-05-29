@@ -6,7 +6,7 @@ $ ssh hpctrn??@mike.hpc.lsu.edu <b># replace ?? with your training account numbe
 hpctrn??@mike.hpc.lsu.edu's password: <b># type in the long password, the input will NOT echo back</b>
 </pre>
 
-## 2. Start an interactive job:
+## 2. Start an interactive job so that you are on a compute node either in the shelob queue or training queue:
 If your training account number is less than or equal to 32 (e.g. `hpctrn01 ~ hpctrn32`):
 <pre>
 [hpctrn??@mike1 ~]$ qsub -I -l nodes=1:ppn=16,walltime=8:00:00 <b>-q shelob</b> -A hpc_train_2018
